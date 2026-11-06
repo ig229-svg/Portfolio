@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B1120">
+  <title>Projects | Israel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Israel, home">
+        <span class="brand-mark" aria-hidden="true">I.</span>
+        <span>Israel</span>
+      </a>
+
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-tools">
+        <button class="menu-toggle" id="menu-toggle" type="button"
+          aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+          <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="menu-label">Menu</span>
+        </button>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+          <span class="theme-indicator" aria-hidden="true"></span>
+          <span class="theme-label">Use light theme</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="projects-intro" aria-labelledby="projects-title">
+      <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Selected work</p>
+      <h1 id="projects-title">Projects<span>.</span></h1>
+      <p>Engineering and software projects that reflect my interests in building and designing.</p>
+    </section>
+
+    <section class="projects-grid" aria-label="Project list">
+      <article class="project-card">
+        <figure class="project-visual project-visual-parking">
+          <svg class="project-illustration" viewBox="0 0 520 300" role="img" aria-labelledby="parking-title parking-description">
+            <title id="parking-title">Smart parking system illustration</title>
+            <desc id="parking-description">A simple overhead drawing of a car inside a marked parking space.</desc>
+            <path class="illustration-line" d="M98 30v240M422 30v240" />
+            <path class="illustration-muted-line" d="M112 48h86M112 252h86M322 48h86M322 252h86" />
+            <path class="illustration-accent-line" d="M260 34v38m0 156v38" />
+            <rect class="illustration-car" x="204" y="72" width="112" height="156" rx="34" />
+            <path class="illustration-window" d="M220 107q40-24 80 0v31h-80zM220 190q40 20 80 0v-27h-80z" />
+            <path class="illustration-wheel" d="M195 104h9v31h-9M316 104h9v31h-9M195 165h9v31h-9M316 165h9v31h-9" />
+            <circle class="illustration-signal" cx="260" cy="150" r="9" />
+            <circle class="illustration-signal-ring" cx="260" cy="150" r="20" />
+          </svg>
+        </figure>
+        <div class="project-copy">
+          <p class="project-type">Engineering project</p>
+          <h2>Smart Parking System</h2>
+          <p>An engineering project focused on a smart parking solution.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <figure class="project-visual project-visual-news">
+          <svg class="project-illustration" viewBox="0 0 520 300" role="img" aria-labelledby="news-title news-description">
+            <title id="news-title">Python news aggregator illustration</title>
+            <desc id="news-description">A stylized news feed with several headline rows and a highlighted article.</desc>
+            <rect class="illustration-paper" x="108" y="35" width="304" height="230" rx="12" />
+            <path class="illustration-accent-line" d="M136 67h99" />
+            <circle class="illustration-signal" cx="374" cy="67" r="6" />
+            <rect class="illustration-highlight" x="136" y="92" width="248" height="82" rx="8" />
+            <rect class="illustration-thumbnail" x="151" y="107" width="62" height="52" rx="5" />
+            <path class="illustration-highlight-line" d="M228 112h130M228 128h108M228 151h82" />
+            <path class="illustration-muted-line" d="M136 196h228M136 214h184M136 239h117M274 239h92" />
+            <circle class="illustration-feed-dot" cx="374" cy="196" r="5" />
+            <circle class="illustration-feed-dot" cx="342" cy="214" r="5" />
+          </svg>
+        </figure>
+        <div class="project-copy">
+          <p class="project-type">Python application</p>
+          <h2>Python News Aggregator</h2>
+          <p>A Python application that retrieves news headlines from NewsAPI using <code>requests</code>, stores news information in SQLite, and includes duplicate prevention.</p>
+          <ul class="project-facts" aria-label="Project technologies and features">
+            <li>Python</li>
+            <li>NewsAPI</li>
+            <li>requests</li>
+            <li>SQLite</li>
+            <li>Duplicate prevention</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <figure class="project-visual project-visual-holder">
+          <svg class="project-illustration" viewBox="0 0 520 300" role="img" aria-labelledby="holder-title holder-description">
+            <title id="holder-title">Car-mounted phone holder illustration</title>
+            <desc id="holder-description">A clean product-design drawing of a phone holder and a phone, shown as a CAD-style outline.</desc>
+            <path class="illustration-muted-line" d="M92 235h336M120 250h280" />
+            <path class="illustration-frame" d="M226 218h68l-12-47h-44z" />
+            <path class="illustration-frame" d="M260 171v-24m0 0-48-28m48 28 48-28" />
+            <rect class="illustration-phone" x="211" y="39" width="98" height="156" rx="15" />
+            <path class="illustration-phone-screen" d="M223 61h74v110h-74z" />
+            <path class="illustration-accent-line" d="M244 50h32" />
+            <circle class="illustration-signal" cx="260" cy="182" r="4" />
+            <path class="illustration-dimension" d="M184 39v156m-7-149 7-7 7 7m-14 142 7 7 7-7" />
+            <path class="illustration-dimension" d="M211 214h98m-91-6-7 6 7 6m84-12 7 6-7 6" />
+          </svg>
+        </figure>
+        <div class="project-copy">
+          <p class="project-type">Engineering product design</p>
+          <h2>Car-Mounted Phone Holder</h2>
+          <p>An engineering product design project focused on a car-mounted phone holder, including CAD and product design.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Israel <span aria-hidden="true">/</span> NJIT</p>
+    <a href="mailto:ig229@njit.edu">ig229@njit.edu</a>
+    <p class="footer-note">Software and Data Engineering Technology</p>
+  </footer>
+</body>
+</html>
